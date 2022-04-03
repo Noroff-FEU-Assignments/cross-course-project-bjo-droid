@@ -1,10 +1,408 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My first website</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8177bdf465.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>GameHub</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
+    <nav class="navigation">
+      <a href="index.html" class="logo"><span>Game</span>Hub</a>
+      <input type="checkbox" class="menu-btn" name="" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#category">Categories</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <div class="right-nav">
+        <a href="#" class="like"><i class="fas fa-heart"></i><span>0</span></a>
+        <a href="#" class="cart"
+          ><i class="fas fa-cart-shopping"></i><span>0</span></a
+        >
+      </div>
+    </nav>
+    <section id="search-banner">
+      <div class="search-banner-text">
+        <h1>Your next adventure awaits</h1>
+        <strong>What are you waiting for?</strong>
+        <form action="" class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search..."
+            required
+          />
+          <input type="submit" class="search-btn" value="Search" />
+        </form>
+      </div>
+    </section>
+    <section id="category">
+      <div class="category-heading">
+        <h2>Category</h2>
+        <span>All</span>
+      </div>
+      <div class="category-container">
+        <a href="#" class="category-box">
+          <img src="./img/icons8-keyboard-96.png" alt="Keyboard" />
+          <span>PC</span>
+        </a>
+        <a href="#" class="category-box">
+          <img src="./img/icons8-ps5-480.png" alt="Playstation" />
+          <span>PlayStation</span>
+        </a>
+        <a href="#" class="category-box">
+          <img src="./img/icons8-nintendo-switch-logo-480.png" alt="Nintendo" />
+          <span>Nintendo</span>
+        </a>
+        <a href="#" class="category-box">
+          <img src="./img/icons8-xbox-480.png" alt="Xbox" />
+          <span>TXbox</span>
+        </a>
+        <a href="#" class="category-box">
+          <img src="./img/icons8-apple-logo-480.png" alt="Mac" />
+          <span>Mac</span>
+        </a>
+      </div>
+    </section>
+    <section id="popular-product">
+      <div class="product-heading">
+        <h3>Popular</h3>
+        <span>All</span>
+      </div>
+      <div class="product-container">
+        <div class="product-box">
+          <img src="./img/TheWitcher3.png" alt="The Witcher 3">
+          <strong>The Witcher 3</strong>
+          <span class="price">599,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/ThelastOfUs2.png" alt="The Las Of Us 2">
+          <strong>The Last of Us</strong>
+
+          <span class="price">599,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/Persona.png" alt="Persona 5">
+          <strong>Persona 5</strong>
+
+          <span class="price">599,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/ReadDeadRedemption.png" alt="Read Dead Redemption 2">
+          <strong>Red Dead Redemption 2</strong>
+          
+          <span class="price">599,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/GodOfWar.png" alt="God Of War">
+          <strong>God of War</strong>
+          
+          <span class="price">599,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/GuardiansOfTheGalaxy.png" alt="Guardians Of The Galaxy">
+          <strong>Guardians of The Galaxy</strong>
+          
+          <span class="price">599,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="comming-soon">
+      <div class="product-heading">
+        <h3>Comming Soon</h3>
+      </div>
+
+      <div class="product-container">
+        <div class="product-box">
+          <img src="./img/eldenring_game.png" alt="Elden Ring">
+          <strong>Elden Ring</strong>
+          
+          <span class="price">14/02/2022</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Pre-Order
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/BattleField2042.png" alt="Battlefield 2042">
+          <strong>Battlefield 2042</strong>
+          
+          <span class="price">24/05/2022</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Pre-Order
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/Pokemon.png" alt="Pokemon">
+          <strong>Pokemon</strong>
+          
+          <span class="price">TBA</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Pre-Order
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/MetalGearSolid3.png" alt="Meteal Gear Solid 3">
+          <strong>Metal Gear Solid 3</strong>
+          
+          <span class="price">TBA</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Pre-Order
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/PaperMario.png" alt="Paper Mario">
+          <strong>Paper Mario</strong>
+          
+          <span class="price">08/06/2022</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Pre-Order
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/Riders.png" alt="Riders Republic">
+          <strong>Riders Republic</strong>
+          
+          <span class="price">14/09/2022</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Pre-Order
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="sale">
+      <div class="product-heading">
+        <h3>Sale</h3>
+      </div>
+
+      <div class="product-container">
+        <div class="product-box">
+          <img src="./img/HollowKnight.png" alt="Hollow Knight">
+          <strong>Hollow Knight</strong>
+          
+          <span class="price">479,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/MarioParty.png" alt="Mario Party">
+          <strong>Mario Party</strong>
+          
+          <span class="price">479,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Pre-Order
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/AnimalCrossing.png" alt="Animal Crossing">
+          <strong>Animal Crossing</strong>
+          
+          <span class="price">479,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/Unpacking.png" alt="Unpacking">
+          <strong>Unpacking</strong>
+          
+          <span class="price">299,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/SolarAsh.png" alt="Solar Ash">
+          <strong>Solar Ash</strong>
+          
+          <span class="price">299,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+        <div class="product-box">
+          <img src="./img/Hades.png" alt="Hades">
+          <strong>Hades</strong>
+          
+          <span class="price">299,-</span>
+          <a href="#" class="cart-btn">
+            <i class="fas fa-cart-shopping"></i>Add to Cart
+          </a>
+          <a href="#" class="like-btn">
+            <i class="fas fa-heart"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="news">
+      <div class="news-heading">
+        <h3>Gaming News</h3>
+      </div>
+
+      <div class="news-box-container">
+        <a href="#">
+        <div class="news-box">
+          <div class="news-profile">
+            <img src="img/icons8-xbox-480.png" alt="">
+            <div class="news-text">
+              <strong>John Doe</strong>
+              <span>Author</span>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea harum et dolores? Ad dolorem eum, deleniti nulla culpa laboriosam.</p>
+        </div>
+      </a>
+        <a href="">
+        <div class="news-box">
+          <div class="news-profile">
+            <img src="img/HaloMultiPlayer.png" alt="">
+            <div class="news-text">
+              <strong>John Doe</strong>
+              <span>Author</span>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea harum et dolores? Ad dolorem eum, deleniti nulla culpa laboriosam.</p>
+        </div>
+        </a>
+        <a href="#">
+        <div class="news-box">
+          <div class="news-profile">
+            <img src="img/icons8-nintendo-switch-logo-480.png" alt="">
+            <div class="news-text">
+              <strong>John Doe</strong>
+              <span>Author</span>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea harum et dolores? Ad dolorem eum, deleniti nulla culpa laboriosam.</p>
+        </div>
+      </a>
+      </div>
+    
+    </section>
+
+    <section id="partner">
+      <div class="partner-heading">
+        <h3>Our Trust Partner</h3>
+      </div>
+      <div class="logo-container">
+        <img src="./img/icons8-nintendo-switch-logo-480.png" alt="">
+        <img src="./img/icons8-xbox-480.png" alt="">
+        <img src="./img/icons8-ps5-480.png" alt="">
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="#"><span>Game</span>Hub</a>
+        </div>
+        <div class="footer-links">
+          <strong>Products</strong>
+          <ul>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Esports</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <strong>Our Links</strong>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <strong>Our Service</strong>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
