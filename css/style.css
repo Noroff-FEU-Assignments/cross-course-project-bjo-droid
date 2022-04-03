@@ -33,6 +33,10 @@ body {
   margin: auto;
 }
 
+.navigation a {
+  color: #f8b912;
+}
+
 .menu {
   display: flex;
 }
