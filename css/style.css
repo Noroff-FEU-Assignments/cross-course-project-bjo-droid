@@ -117,7 +117,6 @@ body {
   max-width: 1250px;
   height: 500px;
   border-radius: 30px;
-  background-color: #ecf7ee;
   margin: 10px auto;
   position: relative;
   overflow: hidden;
@@ -211,7 +210,7 @@ body {
 .category-heading h2,
 .product-heading h3,
 .partner-heading h3 {
-  font-size: 1.56rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #121212;
   letter-spacing: 0.5px;
@@ -337,7 +336,7 @@ body {
   position: absolute;
   right: 30px;
   top: 20px;
-  color: #c9c9c9;
+  color: #f8b912;
   font-size: 1.3rem;
 }
 
@@ -585,7 +584,7 @@ footer {
     z-index: 2;
   }
   .navigation .menu-icon .nav-icon {
-    background-color: #141414cc;
+    background-color: #121212;
     display: block;
     height: 2px;
     width: 25px;
@@ -595,7 +594,7 @@ footer {
 
   .navigation .menu-icon .nav-icon::before,
   .navigation .menu-icon .nav-icon::after {
-    background-color: #141414cc;
+    background-color: #121212;
     content: "";
     display: block;
     position: absolute;
