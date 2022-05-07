@@ -117,6 +117,35 @@ body {
   transition: all ease 0.3s;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-height: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 #search-banner {
   max-width: 1250px;
   height: 500px;
@@ -503,6 +532,240 @@ footer {
 .footer-links li a:hover {
   opacity: 1;
   transition: all ease 0.3s;
+}
+
+/* Product Page */
+
+.game-title,
+.game-picture,
+.price-box,
+.ctamodule,
+.picture-break {
+  display: flex;
+  justify-content: center;
+}
+
+.game-title {
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  font-size: larger;
+}
+
+.game-picture img,
+.picture-break img {
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+}
+
+.ctamodule {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.ctamodule button {
+  font-size: large;
+  font-weight: 700;
+  width: 20rem;
+  height: 3.5rem;
+  margin: 10px;
+  background-color: #228b22;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #fff;
+  transition-duration: 0.4s;
+}
+.buy-now {
+  background-color: #f8b912 !important;
+  transition-duration: 0.4s;
+}
+
+.ctamodule button:hover,
+.buy-now:hover {
+  background-color: #54a5d4 !important;
+}
+
+#product-information,
+#requirements {
+  display: flex;
+  justify-content: center;
+}
+
+.general-information,
+.requirements-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin-bottom: 100px;
+}
+
+.general-information {
+  margin-top: 2.5rem;
+  background-color: #ffff;
+  padding: 30px 20px;
+  border: 1px solid #f1f1f1;
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.left-text h3,
+.right-text h3 {
+  padding-top: 1.2rem;
+}
+
+#information {
+  margin: auto;
+  width: 40%;
+}
+
+.about-game,
+.highlight-text {
+  margin-top: 2rem;
+}
+
+.req-minimum,
+.req-recommended {
+  margin-top: 5rem;
+  background-color: #ffff;
+  padding: 30px 20px;
+  border: 1px solid #f1f1f1;
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.req-minimum p,
+.req-recommended p,
+.req-minimum h2,
+.req-recommended h2 {
+  padding-bottom: 1rem;
+}
+
+/* LogIn */
+
+.login-wrapper {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/Braindance_experience-1920x1080-EN.png);
+  background-size: cover;
+}
+
+login-wrapper img {
+  border-radius: 12px 12px 0 0;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 80px 40px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.form::befor {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 25, 0.8);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.form h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  color: aqua;
+}
+
+.form .input-group {
+  position: relative;
+}
+
+.form .input-group input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  letter-spacing: 1p;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  transition: 0.3s ease-out;
+}
+
+.form .input-group input:focus + label,
+.form .input-group input:valid + label {
+  transform: translateY(-18px);
+  color: green;
+}
+
+.submit-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background-color: aqua;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form .input-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+#forgot-pw {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  z-index: 1;
+  background-color: #fff;
+  opacity: 0;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+#forgot-pw:target {
+  height: 100%;
+  opacity: 1;
+}
+
+.forgot-pw {
+  color: inherit;
+}
+
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 1280px) {

@@ -20,9 +20,18 @@
       </label>
       <ul class="menu">
         <li><a href="index.html" class="active">Home</a></li>
+        <div class="dropdown">
         <li><a href="#category">Categories</a></li>
+        <div class="dropdown-content">
+          <a href="./pages/pc.html">PC</a>
+          <a href="./pages/playstation.html">PlayStation</a>
+          <a href="./pages/nintendo.html">Nintendo</a>
+          <a href="./pages/xbox.html">Xbox</a>
+          <a href="./pages/mac.html">Mac</a>
+        </div>
+      </div>
         <li><a href="#">News</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="./pages/login.html">Login</a></li>
       </ul>
       <div class="right-nav">
         <a href="#" class="like"><i class="fas fa-heart"></i><span>0</span></a>
@@ -48,28 +57,25 @@
       </div>
     </section>
     <section id="category">
-      <div class="category-heading">
-        <h2>Category</h2>
-        <span>All</span>
       </div>
       <div class="category-container">
-        <a href="#" class="category-box">
+        <a href="./pages/pc.html" class="category-box">
           <img src="./img/icons8-keyboard-96.png" alt="Keyboard" />
           <span>PC</span>
         </a>
-        <a href="#" class="category-box">
+        <a href="./pages/playstation.html" class="category-box">
           <img src="./img/icons8-ps5-480.png" alt="Playstation" />
           <span>PlayStation</span>
         </a>
-        <a href="#" class="category-box">
+        <a href="./pages/nintendo.html" class="category-box">
           <img src="./img/icons8-nintendo-switch-logo-480.png" alt="Nintendo" />
           <span>Nintendo</span>
         </a>
-        <a href="#" class="category-box">
+        <a href="./pages/xbox.html" class="category-box">
           <img src="./img/icons8-xbox-480.png" alt="Xbox" />
           <span>Xbox</span>
         </a>
-        <a href="#" class="category-box">
+        <a href="./pages/mac.html" class="category-box">
           <img src="./img/icons8-apple-logo-480.png" alt="Mac" />
           <span>Mac</span>
         </a>
@@ -78,11 +84,13 @@
     <section id="popular-product">
       <div class="product-heading">
         <h3>Popular</h3>
-        <span>All</span>
+        <a href="/pages/popular.html"><span>All</span></a>
       </div>
       <div class="product-container">
         <div class="product-box">
+          <a href="./games/thewitcher.html">
           <img src="./img/TheWitcher3.png" alt="The Witcher 3">
+        </a>
           <strong>The Witcher 3</strong>
           <span class="price">599,-</span>
           <a href="#" class="cart-btn">
