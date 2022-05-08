@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
     <script
       src="https://kit.fontawesome.com/8177bdf465.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <title>GameHub</title>
   </head>
   <body>
     <nav class="navigation">
@@ -23,14 +23,15 @@
         <div class="dropdown">
           <li><a href="#">Categories</a></li>
           <div class="dropdown-content">
+            <a href="./pc.html">PC</a>
             <a href="./playstation.html">PlayStation</a>
             <a href="./nintendo.html">Nintendo</a>
             <a href="./xbox.html">Xbox</a>
             <a href="./mac.html">Mac</a>
           </div>
         </div>
-        <li><a href="../pages/news.html">News</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="./news.html">News</a></li>
+        <li><a href="./login.html">Login</a></li>
       </ul>
       <div class="right-nav">
         <a href="./favorites.html" class="like"
@@ -41,38 +42,46 @@
         >
       </div>
     </nav>
-    <main>
-      <div class="login-wrapper">
-        <form action="" class="form">
-          <h2>Log In</h2>
-          <div class="input-group">
-            <input type="text" name="loginUser" id="loginUser" required />
-            <label for="loginUser">User Name</label>
-          </div>
-          <div class="input-group">
-            <input
-              type="password"
-              name="loginPassword"
-              id="loginPasword"
-              required
-            />
-            <label for="loginPassword">Password</label>
-          </div>
-          <input type="submit" value="Login" class="submit-btn" />
-          <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>
-        </form>
-        <div id="forgot-pw">
-          <form action="" class="form">
-            <a href="" class="close">&times;</a>
-            <h2>Reset Password</h2>
-            <div class="input-group">
-              <input type="email" name="email" id="email" required />
-              <label for="email">Email</label>
+    <div class="wrapper">
+      <h1>Favorites</h1>
+      <div class="project">
+        <div class="shop">
+          <div class="box">
+            <img src="../img/TheWitcher/TheWitcher3.png" />
+            <div class="content">
+              <h3>The Witcher 3</h3>
+              <h4>Price: 599 NOK</h4>
+              <p class="btn-area">
+                <i aria-hidden="true" class="fa fa-trash"></i>
+                <span class="btn2">Remove</span>
+              </p>
             </div>
-          </form>
+          </div>
+          <div class="box">
+            <img src="../img/TheLastOfUs/ThelastOfUs2.png" />
+            <div class="content">
+              <h3>Man's Watches</h3>
+              <h4>Price: 599 NOK</h4>
+              <p class="btn-area">
+                <i aria-hidden="true" class="fa fa-trash"></i>
+                <span class="btn2">Remove</span>
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="../img/EldenRing/eldenring.png" />
+            <div class="content">
+              <h3>Samsung Mobile</h3>
+              <h4>Price: 599 NOK</h4>
+              <p class="btn-area">
+                <i aria-hidden="true" class="fa fa-trash"></i>
+                <span class="btn2">Remove</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
+    </div>
     <footer>
       <div class="footer-container">
         <div class="footer-logo">

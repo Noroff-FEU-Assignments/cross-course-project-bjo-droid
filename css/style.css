@@ -808,7 +808,7 @@ login-wrapper img {
   margin: 0 auto;
 }
 .wrapper h1 {
-  padding: 20px 0;
+  padding: 20px 0px 100px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1162,6 +1162,14 @@ login-wrapper img {
   .footer-links {
     margin-top: 10px;
   }
+
+  .picture-break img {
+    height: 300px;
+  }
+
+  .requirements-box {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1170,6 +1178,10 @@ login-wrapper img {
   .news-heading h3,
   .partner-heading h3 {
     font-size: 1.2rem;
+  }
+
+  .picture-break img {
+    height: 300px;
   }
 }
 
