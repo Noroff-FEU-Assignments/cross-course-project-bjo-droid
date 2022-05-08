@@ -1163,6 +1163,14 @@ login-wrapper img {
     margin-top: 10px;
   }
 
+  .news-article a {
+    display: block;
+  }
+
+  .news-img img {
+    height: 250px;
+  }
+
   .picture-break img {
     height: 300px;
   }
